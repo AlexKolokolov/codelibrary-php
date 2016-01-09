@@ -1,0 +1,283 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #011b96;
+    background-image: url(../img/background8.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+	color: #051112;
+    font-weight: 400;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*ie8*/
+}
+
+a {
+    color: #000912;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a4bcbc;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Стили верхнего колоннтитула*/
+
+header, footer, article, nav {
+    width: 98%;
+    float: left;
+    padding: 0.5%;
+    margin: 0.5%;
+    margin-bottom: 15px;
+/*    background: linear-gradient(#576fd7, #374fb7);*/
+    background: linear-gradient(rgba(90,110,200,.95), rgba(50, 70, 160, .85));
+/*    border: 1px ridge #4856c7;*/
+    box-shadow: 5px 5px 10px #171f57;
+/*    opacity: 0.94;*/
+}
+
+header #logo img {
+    height: 50px;
+    margin-left: 30%; 
+}
+    
+
+@media (min-width: 1000px) {
+    header #logo {
+        width: 12%;
+        float: left;
+    }
+    
+    header #title {
+        width: 28%;
+        float: left;
+        text-align: left;
+        color: #a4bcbc;
+        font-size: 1.2em;
+        text-shadow: 2px 2px 5px #171f57;
+    }
+
+    header #mainMenu {
+        width: 35%;
+        float: left;
+    }
+
+    header #about {
+        width: 23%;
+        float: left;
+    }
+}
+
+@media (max-width: 999px) {
+    header #logo {
+        width: 20%;
+        float: none;
+    }
+    
+        
+    header #title {
+        width: 78%;
+        float: none;
+        text-align: left;
+        color: #a4bcbc;
+        font-size: 1.2em;
+    }
+
+    header #maimMenu{
+        width: 98%;
+        float: none;
+    }
+    
+    header #about {
+        width: 98%;
+        float: none;
+    }
+}
+
+.menuButton {
+    padding: 5px 3% 5px 3%;
+    float: left;
+    background-color: #4c3f77;
+    color: #a4bcbc;
+    border: 1px solid #051126;
+    margin: 2px -1px 2px -1px;
+}
+
+.menuButton:hover, .menuButton:active {
+    background-color: #7c587f;   
+}
+
+.refButton, .navButton {
+    padding: 5px 3% 5px 3%;
+    float: left;
+    background-color: #4c3f77;
+    color: #a4bcbc;
+    border: 1px solid #051126;
+    border-radius: 5px;
+    margin: 2px;
+    margin-left: 2%;
+}
+
+.refButton:hover, .navButton:hover {
+    background-color: #7c587f;    
+}
+
+/*Стили для основной колонки*/
+
+@media (min-width: 1200px) {
+    section {
+        width: 54%;
+        min-height: 85%;
+        float: left;
+        margin-left: 23%;
+    }
+}
+
+@media (max-width: 1199px) {
+    section {
+        width: 74%;
+        min-height: 85%;
+        float: left;
+        margin-left: 13%;
+    }
+}
+
+@media (max-width: 950px) {
+    section {
+        width: 100%;
+        min-height: 85%;
+        float: left;
+        margin-left: auto;
+    }
+}
+
+article h1, article h2{
+    padding: 5px;
+    margin: 0.5%;
+    margin-bottom: 10px;
+    background-color: #4c3f77;
+    color: #a4bcbc;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #051126;
+}
+
+article h1:hover {
+    background-color: #7c587f;
+/*    color: #4c3f77;*/
+}
+
+article p, article menu {
+    margin: 1%;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+article img {
+    float: none;
+    max-height: 250px;
+    margin-left: 2%;
+    border: 1px solid #051126;
+}
+
+article img:hover {
+    transform: scale(2);
+}
+
+
+nav {
+    position: relative;
+    height: 35px;
+}
+
+nav #pagesNum {
+    position: absolute;
+    top: 10px;
+    left: 40%; 
+}
+
+nav #previous {
+    position: absolute;
+    left: 10px; 
+}
+
+nav #next {
+    position: absolute;
+    right: 10px; 
+}
+
+#social img {
+    border: none;
+}
+
+/*Стили для полей ввода*/
+
+label {
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+input {
+    width: 30%;
+    float:left;
+    font-size: 1.2em;
+    background-color: #6677cc;
+    border: 2px solid #051126;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+textarea {
+    width: 80%;
+    height: 120px;
+    margin-left: 9%;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    background-color: #6677cc;
+    border: 2px solid #051126;
+    border-radius: 5px;
+    resize: none;
+    padding: 2px;
+}
+
+textarea:focus, input:focus {
+    border-color: #354176;
+    background-color: #7687dc;
+}
+
+input#done {
+    width: auto;
+    margin-left: 40%;
+}
+
+#messageShow {
+    width: 100%;
+    font-size: 1.2em;
+    float: left;
+    color: #770000;
+    text-align: center;
+    font-weight: 500;
+}
